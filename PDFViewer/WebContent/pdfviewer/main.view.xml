@@ -1,0 +1,12 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+		controllerName="pdfviewer.main" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+			<l:HorizontalLayout id="staticContentLayout">
+				<l:content>
+
+				</l:content>
+			</l:HorizontalLayout>
+		</content>
+	</Page>
+</core:View>
