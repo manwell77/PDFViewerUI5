@@ -1,0 +1,13 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+		controllerName="pdfviewer.reader" xmlns:html="http://www.w3.org/1999/xhtml">	
+     <Page id="pdfReader" title="PDF Reader" showNavButton="true" navButtonPress="onBack" contentOnlyBusy="true">        
+		<content>
+			<!--  
+			<core:HTML content="{parts: ['compressed.tracemonkey-pldi-09.pdf'], formatter: '.formatter.showPDF'}">
+			</core:HTML>
+			-->
+			<core:HTML content="&lt;iframe src='../PDFViewer/pdfjs/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf' width='100%' height='100%'&gt;">
+			</core:HTML>
+		</content>				
+     </Page>  
+</core:View>

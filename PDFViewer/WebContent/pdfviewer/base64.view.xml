@@ -1,0 +1,10 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+		controllerName="pdfviewer.base64" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="pdfBase64" title="Base64" showNavButton="true" navButtonPress="onBack" contentOnlyBusy="true">
+		<content>
+			<Button id="prev" icon="sap-icon://sys-prev-page" press="previousPage" text="Previous"/>
+			<Button id="next" icon="sap-icon://sys-next-page" press="nextPage" text="Next"/>
+			<core:HTML content="&lt;br&gt;&lt;canvas id='the-canvas' style='border:1px  solid black'&gt;&lt;/canvas&gt;"/>
+		</content>
+	</Page>
+</core:View>

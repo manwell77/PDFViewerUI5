@@ -2,11 +2,8 @@
 		controllerName="pdfviewer.main" xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Title">
 		<content>
-			<l:HorizontalLayout id="staticContentLayout">
-				<l:content>
-
-				</l:content>
-			</l:HorizontalLayout>
+				<Button icon="sap-icon://pdf-attachment" press="onReader" text="Reader"/>
+				<Button icon="sap-icon://pdf-attachment" press="onBase64" text="Base64"/>
 		</content>
 	</Page>
 </core:View>

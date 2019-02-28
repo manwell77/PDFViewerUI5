@@ -4,20 +4,14 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "pdfviewer/formatter"],
 	
 		"use strict";
 		
-		return Controller.extend("pdfviewer.main", { 
+		return Controller.extend("pdfviewer.reader", { 
 
 			formatter: formatter,
-
-			onReader: function(oEvent) {
-				
-				sap.ui.getCore().byId('pdf').to('pdfReader');
-				
+		
+			onBack: function() {
+				sap.ui.getCore().byId('pdf').to("main");
 			},
-			
-			onBase64: function() {
-				sap.ui.getCore().byId('pdf').to('pdfBase64');
-			},
-			
+		
 		/**
 		* Called when a controller is instantiated and its View controls (if available) are already created.
 		* Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
@@ -26,7 +20,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "pdfviewer/formatter"],
 			onInit: function() {
 				
 		   },
-		
+	
 		/**
 		* Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
 		* (NOT before the first rendering! onInit() is used for that one!).
@@ -45,7 +39,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "pdfviewer/formatter"],
 				
 				
 			},
-		
+	
 		/**
 		* Called when the Controller is destroyed. Use this one to free resources and finalize activities.
 		* @memberOf pdfviewer.main
@@ -53,7 +47,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "pdfviewer/formatter"],
 		//	onExit: function() {
 		//
 		//	}
-
+	
 	});
 		
 });
