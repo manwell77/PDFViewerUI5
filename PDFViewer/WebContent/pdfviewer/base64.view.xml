@@ -4,7 +4,9 @@
 		<content>
 			<Button id="prev" icon="sap-icon://sys-prev-page" press="previousPage" text="Previous"/>
 			<Button id="next" icon="sap-icon://sys-next-page" press="nextPage" text="Next"/>
-			<core:HTML content="&lt;br&gt;&lt;canvas id='the-canvas' style='border:1px  solid black'&gt;&lt;/canvas&gt;"/>
+			<Button id="big" icon="sap-icon://zoom-in" press="zoomIn"/>
+			<Button id="small" icon="sap-icon://zoom-out" press="zoomOut"/>			
+			<core:HTML content="&lt;div id='div-pdf'&gt;&lt;br&gt;&lt;canvas id='the-canvas' style='border:1px  solid black'&gt;&lt;/canvas&gt;&lt;/div&gt;"/>
 		</content>
 	</Page>
 </core:View>
